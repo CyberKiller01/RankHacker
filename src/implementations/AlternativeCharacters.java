@@ -8,7 +8,7 @@ The first line contains an integer T, i.e. the number of test cases.
 The next T lines contain a string each.
 Output Format
 For each test case, print the minimum number of deletions required.
-Constraints
+Constraints/
 1≤T≤10
 1≤ length of string ≤10^5rt
 */
