@@ -1,9 +1,7 @@
 package Greedy;
-import java.io.*;
+
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+
 
 public class MarkAndToys {
 
@@ -13,12 +11,11 @@ public class MarkAndToys {
             int prices[]=new int[n];
             for(int i=0;i<n;i++) prices[i]=stdin.nextInt();
 
-            int answer = 0;
             Arrays.sort(prices);
 
             int sum = 0;
             int i = 0;
-            while(sum <=k){
+            while(sum <=k){ //считаем сумму по отсортированному массиву
                 sum+=prices[i++];
             }
             System.out.println(i-1);

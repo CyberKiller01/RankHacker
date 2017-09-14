@@ -1,10 +1,7 @@
 package Greedy;
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class PermutingTwoArrays{
 
@@ -29,7 +26,7 @@ public class PermutingTwoArrays{
             Arrays.sort(numArrayB);
 
             boolean isPossible = true;
-            for(int j=0;j<numArrayA.length;j++){
+            for(int j=0;j<numArrayA.length;j++){ // делаем проверку. По А с начала, а по Б с конца. Если возмонжо - да
                 if(numArrayA[j]+numArrayB[numArrayB.length-1-j] < kValue){
                     isPossible = false;
                     break;

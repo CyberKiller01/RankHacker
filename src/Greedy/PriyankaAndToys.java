@@ -18,7 +18,7 @@ public class PriyankaAndToys {
 
         int count = 1;
         int currentToy=numArray[0];
-        for(int i = 1;i<numArray.length;i++){
+        for(int i = 1;i<numArray.length;i++){ // считаем от текущего элемента сколько потребуется юнитов
             if(numArray[i]>currentToy+4){
                 count++;
                 currentToy=numArray[i];

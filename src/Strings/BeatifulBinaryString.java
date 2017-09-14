@@ -1,4 +1,4 @@
-package implementations;
+package Strings;
 
 //https://www.hackerrank.com/challenges/beautiful-binary-string
 /*
@@ -40,7 +40,7 @@ public class BeatifulBinaryString {
         final String stringToBeFound = "010";
         int lastIndex = 0;
         while (lastIndex != -1) {
-            lastIndex = str.indexOf(stringToBeFound, lastIndex);
+            lastIndex = str.indexOf(stringToBeFound, lastIndex); //ищет 010 начиная с lastIndex
             if (lastIndex != -1) {
                 count++;
                 lastIndex += stringToBeFound.length();
